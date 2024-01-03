@@ -18,6 +18,15 @@ final void Function()? onProfileTap;
            DrawerHeader(child:Icon(Icons.person,
           size: 52,
           )),
+             Padding(
+           padding: const EdgeInsets.only(left: 20,top: 30),
+           child: MyListTile(
+            icon: Icons.home, 
+            text:'H O M E',
+            onTap: () => Navigator.pop(context),
+
+            ),
+         ),
         
         
         Padding(
@@ -25,13 +34,9 @@ final void Function()? onProfileTap;
           child: MyListTile(
             icon: Icons.person_2, 
             text: 'P R O F I L E',
-            onTap: onProfileTap,
-            
-            ),
-            
+            onTap: onProfileTap,           
+            ),  
         ),
-
-       
       ]),
     );
   }
